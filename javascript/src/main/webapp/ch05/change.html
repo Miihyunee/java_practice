@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Change</title>
+	<script src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script>
+		$(function () {
+			$("#button1").click(function () {
+				$("#p1").text("<marquee>change text</marquee>");
+			});
+			$("#button2").click(function () {
+				$("#p1").html("<marquee>change html</marquee>");
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<p id="p1">paragraph</p>
+	<button id="button1">change text</button>
+	<button id="button2">change html</button>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		car = { // 클래스명
+			maker: "Hyundai", // key : value
+			model: "Avante",
+			year: 2021,
+			speed: 50,
+			speedUp: function () {this.speed += 10;}, // 함수명 : 함수
+			speedDown: function () {this.speed -= 10;}
+		};
+		car.speedUp();
+		document.write(car["speed"] + "<br>");
+		document.write(car["maker"] + "<br>");
+		document.write(car["model"] + "<br>");
+		document.write(car["year"] + "<br>");
+		document.write(car.maker + "<br>");
+		document.write(car.model + "<br>");
+		document.write(car.year + "<br>");
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

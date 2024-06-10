@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		//전역 변수
+		let timer;
+		function msg() {
+			console.log("msg 함수 호출...");
+		}
+
+		function test() {
+			console.log("timeout 함수 호출...");
+		}
+
+		function start() {
+			timer = setTimeout("test()", 1000); //1회용
+			timer = setInterval("msg()", 1000); //무한반복
+		}
+
+		function stop() {
+			clearTimeout(timer);
+			clearInterval(timer);
+		}
+	</script>
+</head>
+
+<body>
+	<button onclick="start()">start timer</button>
+	<button onclick="stop()">stop timer</button>
+</body>
+
+</html>

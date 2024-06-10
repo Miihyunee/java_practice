@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function check() {
+			let name = document.getElementById("name");
+			if (name.value == "") {
+				alert("input name");
+				name.focus();
+				return;
+			}
+
+			if (name.value.length >= 3 && name.value.length <= 8) {
+				alert("OK");
+			} else {
+				alert("3 to 8 letters");
+				name.focus();
+				return;
+			}
+		}
+	</script>
+</head>
+
+<body>
+	name : <input type="text" id="name">
+	<input type="button" onclick="check()" value="OK">
+</body>
+
+</html>

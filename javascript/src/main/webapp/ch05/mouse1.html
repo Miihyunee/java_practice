@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Mouse 1</title>
+	<script src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script>
+		$(function () {
+			$("img").bind({
+				mouseout: function () {
+					$("img").attr("src", "../images/spring.jpg");
+					$("img").attr("width", "20%");
+					$("img").attr("height", "20%");
+				},
+				mouseover: function () {
+					$("img").attr("src", "../images/summer.jpg");
+					$("img").attr("width", "50%");
+					$("img").attr("height", "50%");
+				},
+				click: function () {
+					$("img").attr("src", "../images/winter.jpg");
+					$("img").attr("width", "80%");
+					$("img").attr("height", "80%");
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<img src="../images/spring.jpg" width="20%" height="20%">
+</body>
+
+</html>

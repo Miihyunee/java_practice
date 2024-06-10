@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Text</title>
+	<script>
+		function init() {
+			canvas = document.getElementById("myCanvas");
+			context = canvas.getContext("2d");
+			context.font = "50px serif";
+			context.strokeStyle = "blue";
+			context.strokeText("Hello", 20, 100);
+		}
+	</script>
+</head>
+
+<body onload="init()">
+	<canvas id="myCanvas" width="300" height="200"></canvas>
+</body>
+
+</html>

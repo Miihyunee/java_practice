@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Input</title>
+	<script src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script>
+		$(function () {
+			$("#button1").click(function () {
+				let name = $("#name").val();
+				alert(name);
+				name = prompt("name: ", "Kim");
+				$("#name").val(name);
+				$("#img1").attr("src", "../images/summer.jpg");
+				$("#img1").attr({
+					"width": "300px",
+					"height": "300px"
+				});
+			});
+		});
+	</script>
+</head>
+
+<body>
+	name : <input id="name" value=""><br>
+	<img id="img1" src="../images/spring.jpg"><br>
+	<button id="button1">OK</button>
+</body>
+
+</html>

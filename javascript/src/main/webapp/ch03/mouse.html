@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function mouse_over(obj) {
+			obj.style.border = "2px solid coral";
+			obj.style.fontSize = "30px";
+		}
+
+		function mouse_out(obj) {
+			obj.style.border = "";
+			obj.style.fontSize = "12px";
+		}
+	</script>
+</head>
+
+<body>
+	<div style="background-color: lemonchiffon; width: 200px;" onmouseover="mouse_over(this)"
+		onmouseout="mouse_out(this)">mouse event</div>
+</body>
+
+</html>

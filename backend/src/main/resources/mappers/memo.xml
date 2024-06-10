@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="memo">
+	<select id="list" resultType="java.util.Map">
+		SELECT idx, writer, memo,
+		date_format(post_date, '%Y-%m-%d %H:%i:%s') post_date
+		FROM memo
+		WHERE
+		memo LIKE #{product_name}
+		ORDER BY idx DESC
+	</select>
+
+	<insert id="insert">
+		INSERT INTO memo( writer, memo, post_date)
+		VALUES
+		(#{writer}, #{memo}, now())
+	</insert>
+
+	<select id="detail" resultType="java.util.Map">
+		SELECT idx, writer, memo,
+		date_format(post_date, '%Y-%m-%d %H:%i:%s') post_date
+		FROM memo
+		WHERE
+		idx = #{idx}
+	</select>
+
+	<update id="update">
+		UPDATE memo SET writer = #{writer}, memo = #{memo}
+		WHERE idx = #{idx}
+	</update>
+
+	<delete id="delete">
+		DELETE FROM memo
+		WHERE idx = #{idx}
+	</delete>
+</mapper>

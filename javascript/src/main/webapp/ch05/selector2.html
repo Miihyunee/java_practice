@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Selector 2</title>
+	<script src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script>
+		$(function () {
+			$("li:nth-child(odd)").css("background-color", "yellow");
+			$("li:nth-child(even)").css("background-color", "blue");
+		});
+	</script>
+</head>
+
+<body>
+	<ul>
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+		<li>item 4</li>
+	</ul>
+	<ul>
+		<li>item 5</li>
+		<li>item 6</li>
+		<li>item 7</li>
+		<li>item 8</li>
+	</ul>
+</body>
+
+</html>

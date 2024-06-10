@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas</title>
+	<script>
+		function init() {
+			let canvas = document.getElementById("myCanvas");
+			// 2d : 그래픽도구(붓)
+			let context = canvas.getContext("2d");
+			context.fillStyle = "#ffff00";
+			context.fillRect(10, 10, 100, 50);
+			//rect : 색이 없는 사각형
+			context.rect(80, 10, 100, 50);
+			context.strokeStyle = "blue";
+			context.stroke();
+		}
+	</script>
+	<style>
+		body {
+			margin: 0;
+		}
+	</style>
+</head>
+
+<body onload="init()">
+	<canvas id="myCanvas" width="200px" height="100px" style="border:1px solid crimson;"></canvas>
+</body>
+
+</html>

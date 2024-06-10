@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		str = "Java, javascript, java";
+		//문자열.match(/검색키워드/옵션)
+		//i : insensitive 대소문자 구분없이 검사
+		//g : global 전역검사
+		result = str.match(/java/ig);
+		document.write("1. " + result + "<br>");
+		result = str.replaceAll("java", "JAVA");
+		document.write("2. " + result + "<br>");
+		str = "one two three four five";
+		arr = str.split(" ");
+		for (item in arr) {
+			document.write("반복. " + arr[item] + "<br>");
+		}
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Selector 1</title>
+	<script src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script>
+		$(function () {
+			$("h2").click(function () {
+				$(this).css("color", "red");
+				$(this).css("background-color", "yellow");
+				$(this).css("font-size", "2em");
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<h2>heading 1</h2>
+	<h2>heading 2</h2>
+	<h2>heading 3</h2>
+</body>
+
+</html>

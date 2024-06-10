@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function change(img) {
+			document.body.style.backgroundImage = "url(" + img + ")";
+		}
+	</script>
+	<style>
+		body {
+			background-image: url('../images/spring.jpg');
+			/* 지정한 요소를 다 덮도록 배경이미지를 확대축소 */
+			background-size: cover;
+		}
+	</style>
+
+</head>
+
+<body>
+	<h2>change background</h2>
+	<input type="button" value="spring" onclick="change('../images/spring.jpg')">
+	<input type="button" value="summer" onclick="change('../images/summer.jpg')">
+	<input type="button" value="autumn" onclick="change('../images/autumn.jpg')">
+	<input type="button" value="winter" onclick="change('../images/winter.jpg')">
+</body>
+
+</html>
